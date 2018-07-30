@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>SIGIR16Controversy</groupId>
+    <artifactId>KNNSIGIRControversyDetection</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+        <galago.version>3.9</galago.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <javaVersion>1.8</javaVersion>
+        <mainClass>edu.umass.ciir.hack.App</mainClass>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>edu.umass.ciir.snapshots</id>
+            <name>CIIR Nexus Snapshots</name>
+
+            <url>http://scm-ciir.cs.umass.edu:8080/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>edu.umass.ciir.releases</id>
+            <name>CIIR Nexus Releases</name>
+
+            <url>http://scm-ciir.cs.umass.edu:8080/nexus/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+    <dependency>
+        <groupId>org.lemurproject.galago</groupId>
+        <artifactId>core</artifactId>
+        <version>${galago.version}</version>
+    </dependency>
+    </dependencies>
+
+</project>
